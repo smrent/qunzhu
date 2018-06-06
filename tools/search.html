@@ -1,0 +1,151 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>区块链帮助-群组搜索</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/search.main.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+    	function Check_SearhKeyword(){
+    			var keyword=$(" input[ name='keyword' ] ").val();
+    			//var form1=$(" form[ name='form1' ] ");
+    			//alert(keyword);
+    			if(keyword==""){
+    				alert("请输入关键字");
+    				document.getElementById('keyword').focus();
+    				return false;
+    			}
+    	}
+    </script>
+</head>
+<body style="">
+<header>
+    <!--搜索链接跳转-->
+    <div class="nav" >
+
+        <div class="nav-btn nav-return">
+            <!--返回需要跳转的页面暂时没写-->
+            <a href="../index.php">
+                <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+                <!--<div class="return">返回</div>-->
+            </a>
+
+        </div>
+        <div class="nav-btn nav-logo">
+            <img class="logo" src="../images/logo.jpg" alt="区块链帮助">
+        </div>
+		
+        <div class="float-right  nav-changeSearch">
+			<!--
+            <a href="seekhouse_search.html">
+            求租搜索
+			</a>
+			-->
+        </div>	
+    </div>
+</header>
+<div class="body rent_bgcolor">
+    <div class="select-type">
+        <form class="search-box" id="form1" name="form1" action="../php/search.php" method="get" onsubmit="return Check_SearhKeyword();"><!---->
+            <fieldset>
+                <h4 class="center-title">关键字</h4>
+                <input class="search-bar" type="text" name="keyword" id="keyword" placeholder="请输入关键字，如‘落户’">
+                <input class="btn small-rentout" maxlength="20" type="submit" value="搜索">
+            </fieldset>
+        </form>
+        <form action="../php/search.php" method="get">
+            <fieldset class="form-middle">
+			    <!--
+                <div class="line-box">
+                    <label for=""><input name="rent_type" type="radio" checked="" value="不限">不限</label>
+                    <label for=""><input name="rent_type" type="radio" value="整租">整租</label>
+                    <label for=""><input name="rent_type" type="radio" value="转租">转租</label>
+                    <label for=""><input name="rent_type" type="radio" value="合租">合租</label>	
+                </div>
+				-->
+                <div class="line-box">
+					<h4 class="center-title">按条件</h4>
+                    <label for="district">区域</label>
+                    <select name="district" id="district">
+                        <option selected="">全国</option>
+                        <option>北京</option>
+						<option>环京</option>
+                        <option>天津</option>
+						<!--
+                        <option>上海</option>
+                        <option>重庆</option>
+                        <option>河北</option>
+                        <option>山西</option>
+                        <option>辽宁</option>
+                        <option>吉林</option>
+                        <option>黑龙江</option>
+                        <option>江苏</option>
+                        <option>浙江</option>
+                        <option>安徽</option>
+                        <option>福建</option>
+                        <option>江西</option>
+                        <option>山东</option>
+                        <option>河南</option>
+                        <option>湖北</option>
+                        <option>湖南</option>
+						<option>广东</option>
+						<option>海南</option>
+						<option>四川</option>
+						<option>贵州</option>
+						<option>云南</option>
+						<option>陕西</option>
+						<option>甘肃</option>
+						<option>青海</option>
+						<option>内蒙古</option>
+						<option>西藏</option>
+						<option>广西</option>
+						<option>宁夏</option>
+						<option>新疆</option>
+						<option>香港</option>
+						<option>澳门</option>
+						<option>台湾</option> 
+						-->
+                        <!--添加候选项-->
+                    </select>
+                    <p class="info">所在省市</p>
+                </div>
+                <div class="line-box">
+                    <label for="district">类别</label>
+                    <select name="rent_type" id="rent_type">
+                        <option selected="">不限</option>
+						<option>租房</option>
+						<option>落户</option>
+						<option>求职</option>
+                        <option>技术</option>
+						<option>创业</option>
+                        <option>交友</option>   
+						<option>装修</option>
+						<option>房产</option>
+						<option>娱乐</option>
+						<option>小程序</option>
+						<option>知识产权</option>
+                        <!--添加候选项-->
+                    </select>
+                    <p class="info">群组类别</p>
+                </div>
+                <div class="line-box">
+                    <label for="district">类型</label>
+                    <select name="room_type" id="room_type">
+                        <option selected="">不限</option>
+                        <option>群主</option>
+                        <option>副群主</option>
+                        <!--添加候选项-->
+                    </select>
+                    <p class="info">群主类型</p>
+                </div>
+            </fieldset>
+            <fieldset class="form-bottom">
+
+                    <input class="rentout" type="submit" value="搜索">
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+</body></html>
