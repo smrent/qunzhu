@@ -221,9 +221,18 @@ a.active {
 }
 
 /*border: 1px solid #999;*/
-.get_more {
-    margin: 10px;
-    text-align: center
+a.get_more{
+    display: block;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #3f98ff;
+    padding: 0.1rem;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 2rem;
+    color:white;
+
 }
 
 .more_loader_spinner {

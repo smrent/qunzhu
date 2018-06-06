@@ -1,42 +1,43 @@
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>区块链帮助-待验证群组</title>
     <meta name="author" content="qklbz.com">
-		<meta name="Copyright" content="qklbz.com">
-		<meta name="Keywords" content="区块链帮助-必有回响-qklbz.com">   
-		<meta name="Description" content="区块链帮助-必有回响-qklbz.com">   
+    <meta name="Copyright" content="qklbz.com">
+    <meta name="Keywords" content="区块链帮助-必有回响-qklbz.com">
+    <meta name="Description" content="区块链帮助-必有回响-qklbz.com">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/houseSeek_main.css" rel="stylesheet">
-		<!--move jquery.min.js to here and add jquery.more.js-->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.more.houseSeek.js"></script>
-		<script type="text/javascript" src="js/jquery.cookie.js"></script>
-		<script type="text/javascript">
-		$(function(){
-			$('#more').more({'address': 'php/data_inh.php'})
-			//alert('111');
-		});
-		//返回之前浏览位置
-		 $(function () {
-        var str = window.location.href;
-        str = str.substring(str.lastIndexOf("/") + 1);
-        if ($.cookie(str)) {
-            $("html,body").animate({ scrollTop: $.cookie(str) }, 1000);
-        }else {
-        }
-    })
-    
-    $(window).scroll(function () {
-        var str = window.location.href;
-        str = str.substring(str.lastIndexOf("/") + 1);
-        var top = $(document).scrollTop();
-        $.cookie(str, top, { path: '/' });
-        return $.cookie(str);
-    })
-		</script>
+    <!--move jquery.min.js to here and add jquery.more.js-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.more.houseSeek.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#more').more({'address': 'php/data_inh.php'})
+            //alert('111');
+        });
+        //返回之前浏览位置
+        $(function () {
+            var str = window.location.href;
+            str = str.substring(str.lastIndexOf("/") + 1);
+            if ($.cookie(str)) {
+                $("html,body").animate({scrollTop: $.cookie(str)}, 1000);
+            } else {
+            }
+        })
+
+        $(window).scroll(function () {
+            var str = window.location.href;
+            str = str.substring(str.lastIndexOf("/") + 1);
+            var top = $(document).scrollTop();
+            $.cookie(str, top, {path: '/'});
+            return $.cookie(str);
+        })
+    </script>
 </head>
 <body style="">
 
@@ -45,13 +46,13 @@
     <div class="nav-btn nav-search">
         <a href="http://qklbz.com/wnbz">
             <!--<i class="fa fa-search fa-2x text-primary " aria-hidden="true"></i>-->
-			<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-home fa-2x" aria-hidden="true"></i>
         </a>
     </div>
     <!--LOGO-->
     <div class="nav-btn nav-logo">
         <img class="logo" src="images/logo.jpg" alt="区块链帮助">
-	    </div>
+    </div>
     <!--发布信息跳转-->
     <div class="nav-btn nav-publish">
 
@@ -63,321 +64,355 @@
 <div class=" body">
     <!--求租信息-->
     <div id="more">
-        <div style="display: none;"><div class="single_item"><!--onclick="alert(this.innerHTML);"-->
-			    <a class="content-box" href="pages/inh_info.php?house_rent_id=25&amp;from=houseSeek">
-			        <!--求租者图片 float-->
-			        <!--
-			        <div class="pic-wrapper float-left">
-			            <img class="headimg" alt="XXX">
-			        </div>
-			        -->
-			        <!--求租者图片 float-->
-			        <div class="pic-wrapper-float" style="background-image: url(&quot;images/head_img/BriceGwo.jpg&quot;);"></div>
-			        <!--求租标题 float-->
-			        <div class="content-wrapper float-left">
-			            <h4><div class="title">无人自动驾驶L2-L3–L4-L5技术交流</div></h4>
-			            <!--房间属性简介 block 垂直排列-->
-						<!--<div class="content"></div>-->
-			            <div class="state">
-			                <ul class="state-info">
-			                    <!--关注人数-->
-								<li>
-			                        <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
-									<!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
-			                        <span class="house_seek_id">W25</span></li>
-								<!--
-			                    <li class="text-center">
-			                        <i class="fa fa-heart" aria-hidden="true"></i>
-			                        <span><div class="follow"></div></span>
-			                    </li>
-								-->
-			                    <li class="text-right"><span class="passtime">4个月前</span></li>
-			                    <!--
-			                    <li>
-			                        <span class="house_seek_id">
-			                    </li>
-			                    -->
-			                </ul>
-			            </div>
-			        </div>
-			    </a>
-			    <hr>
-			  </div></div>
-			  <div class="single_item" id="more_element_1"><!--onclick="alert(this.innerHTML);"-->
-			    <a class="content-box" href="pages/inh_info.php?house_rent_id=5&amp;from=houseSeek">
-			        <!--求租者图片 float-->
-			        <!--
-			        <div class="pic-wrapper float-left">
-			            <img class="headimg" alt="XXX">
-			        </div>
-			        -->
-			        <!--求租者图片 float-->
-			        <div class="pic-wrapper-float" style="background-image: url(&quot;images/head_img/jamesch086.jpg&quot;);"></div>
-			        <!--求租标题 float-->
-			        <div class="content-wrapper float-left">
-			            <h4><div class="title">JD优惠券儿信息交流群</div></h4>
-			            <!--房间属性简介 block 垂直排列-->
-						<!--<div class="content"></div>-->
-			            <div class="state">
-			                <ul class="state-info">
-			                    <!--关注人数-->
-								<li>
-			                        <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
-									<!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
-			                        <span class="house_seek_id">W5</span></li>
-								<!--
-			                    <li class="text-center">
-			                        <i class="fa fa-heart" aria-hidden="true"></i>
-			                        <span><div class="follow"></div></span>
-			                    </li>
-								-->
-			                    <li class="text-right"><span class="passtime">1天前</span></li>
-			                    <!--
-			                    <li>
-			                        <span class="house_seek_id">
-			                    </li>
-			                    -->
-			                </ul>
-			            </div>
-			        </div>
-			    </a>
-			    <hr>
-			  </div><div class="single_item" id="more_element_2"><!--onclick="alert(this.innerHTML);"-->
-			    <a class="content-box" href="pages/inh_info.php?house_rent_id=8&amp;from=houseSeek">
-			        <!--求租者图片 float-->
-			        <!--
-			        <div class="pic-wrapper float-left">
-			            <img class="headimg" alt="XXX">
-			        </div>
-			        -->
-			        <!--求租者图片 float-->
-			        <div class="pic-wrapper-float" style="background-image: url(&quot;images/head_img/3169381.jpg&quot;);"></div>
-			        <!--求租标题 float-->
-			        <div class="content-wrapper float-left">
-			            <h4><div class="title">占卜玄学研究交流群</div></h4>
-			            <!--房间属性简介 block 垂直排列-->
-						<!--<div class="content"></div>-->
-			            <div class="state">
-			                <ul class="state-info">
-			                    <!--关注人数-->
-								<li>
-			                        <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
-									<!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
-			                        <span class="house_seek_id">W8</span></li>
-								<!--
-			                    <li class="text-center">
-			                        <i class="fa fa-heart" aria-hidden="true"></i>
-			                        <span><div class="follow"></div></span>
-			                    </li>
-								-->
-			                    <li class="text-right"><span class="passtime">1天前</span></li>
-			                    <!--
-			                    <li>
-			                        <span class="house_seek_id">
-			                    </li>
-			                    -->
-			                </ul>
-			            </div>
-			        </div>
-			    </a>
-			    <hr>
-			  </div><div class="single_item" id="more_element_3"><!--onclick="alert(this.innerHTML);"-->
-			    <a class="content-box" href="pages/inh_info.php?house_rent_id=13&amp;from=houseSeek">
-			        <!--求租者图片 float-->
-			        <!--
-			        <div class="pic-wrapper float-left">
-			            <img class="headimg" alt="XXX">
-			        </div>
-			        -->
-			        <!--求租者图片 float-->
-			        <div class="pic-wrapper-float" style="background-image: url(&quot;images/head_img/729315717.jpg&quot;);"></div>
-			        <!--求租标题 float-->
-			        <div class="content-wrapper float-left">
-			            <h4><div class="title">一个和谐友爱的王者荣耀群</div></h4>
-			            <!--房间属性简介 block 垂直排列-->
-						<!--<div class="content"></div>-->
-			            <div class="state">
-			                <ul class="state-info">
-			                    <!--关注人数-->
-								<li>
-			                        <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
-									<!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
-			                        <span class="house_seek_id">W13</span></li>
-								<!--
-			                    <li class="text-center">
-			                        <i class="fa fa-heart" aria-hidden="true"></i>
-			                        <span><div class="follow"></div></span>
-			                    </li>
-								-->
-			                    <li class="text-right"><span class="passtime">1天前</span></li>
-			                    <!--
-			                    <li>
-			                        <span class="house_seek_id">
-			                    </li>
-			                    -->
-			                </ul>
-			            </div>
-			        </div>
-			    </a>
-			    <hr>
-			  </div><div class="single_item" id="more_element_4"><!--onclick="alert(this.innerHTML);"-->
-			    <a class="content-box" href="pages/inh_info.php?house_rent_id=14&amp;from=houseSeek">
-			        <!--求租者图片 float-->
-			        <!--
-			        <div class="pic-wrapper float-left">
-			            <img class="headimg" alt="XXX">
-			        </div>
-			        -->
-			        <!--求租者图片 float-->
-			        <div class="pic-wrapper-float" style="background-image: url(&quot;images/head_img/aaronyeah123.jpg&quot;);"></div>
-			        <!--求租标题 float-->
-			        <div class="content-wrapper float-left">
-			            <h4><div class="title">火金财经官方社群</div></h4>
-			            <!--房间属性简介 block 垂直排列-->
-						<!--<div class="content"></div>-->
-			            <div class="state">
-			                <ul class="state-info">
-			                    <!--关注人数-->
-								<li>
-			                        <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
-									<!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
-			                        <span class="house_seek_id">W14</span></li>
-								<!--
-			                    <li class="text-center">
-			                        <i class="fa fa-heart" aria-hidden="true"></i>
-			                        <span><div class="follow"></div></span>
-			                    </li>
-								-->
-			                    <li class="text-right"><span class="passtime">4个月前</span></li>
-			                    <!--
-			                    <li>
-			                        <span class="house_seek_id">
-			                    </li>
-			                    -->
-			                </ul>
-			            </div>
-			        </div>
-			    </a>
-			    <hr>
-			  </div><div class="single_item" id="more_element_5"><!--onclick="alert(this.innerHTML);"-->
-			    <a class="content-box" href="pages/inh_info.php?house_rent_id=17&amp;from=houseSeek">
-			        <!--求租者图片 float-->
-			        <!--
-			        <div class="pic-wrapper float-left">
-			            <img class="headimg" alt="XXX">
-			        </div>
-			        -->
-			        <!--求租者图片 float-->
-			        <div class="pic-wrapper-float" style="background-image: url(&quot;images/head_img/LZ-Aurora.jpg&quot;);"></div>
-			        <!--求租标题 float-->
-			        <div class="content-wrapper float-left">
-			            <h4><div class="title">区块链媒体群</div></h4>
-			            <!--房间属性简介 block 垂直排列-->
-						<!--<div class="content"></div>-->
-			            <div class="state">
-			                <ul class="state-info">
-			                    <!--关注人数-->
-								<li>
-			                        <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
-									<!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
-			                        <span class="house_seek_id">W17</span></li>
-								<!--
-			                    <li class="text-center">
-			                        <i class="fa fa-heart" aria-hidden="true"></i>
-			                        <span><div class="follow"></div></span>
-			                    </li>
-								-->
-			                    <li class="text-right"><span class="passtime">4个月前</span></li>
-			                    <!--
-			                    <li>
-			                        <span class="house_seek_id">
-			                    </li>
-			                    -->
-			                </ul>
-			            </div>
-			        </div>
-			    </a>
-			    <hr>
-			  </div><div class="single_item" id="more_element_6"><!--onclick="alert(this.innerHTML);"-->
-			    <a class="content-box" href="pages/inh_info.php?house_rent_id=18&amp;from=houseSeek">
-			        <!--求租者图片 float-->
-			        <!--
-			        <div class="pic-wrapper float-left">
-			            <img class="headimg" alt="XXX">
-			        </div>
-			        -->
-			        <!--求租者图片 float-->
-			        <div class="pic-wrapper-float" style="background-image: url(&quot;images/head_img/BriceGwo.jpg&quot;);"></div>
-			        <!--求租标题 float-->
-			        <div class="content-wrapper float-left">
-			            <h4><div class="title">房产投资交流群(北京)</div></h4>
-			            <!--房间属性简介 block 垂直排列-->
-						<!--<div class="content"></div>-->
-			            <div class="state">
-			                <ul class="state-info">
-			                    <!--关注人数-->
-								<li>
-			                        <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
-									<!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
-			                        <span class="house_seek_id">W18</span></li>
-								<!--
-			                    <li class="text-center">
-			                        <i class="fa fa-heart" aria-hidden="true"></i>
-			                        <span><div class="follow"></div></span>
-			                    </li>
-								-->
-			                    <li class="text-right"><span class="passtime">4个月前</span></li>
-			                    <!--
-			                    <li>
-			                        <span class="house_seek_id">
-			                    </li>
-			                    -->
-			                </ul>
-			            </div>
-			        </div>
-			    </a>
-			    <hr>
-			  </div><div class="single_item" id="more_element_7"><!--onclick="alert(this.innerHTML);"-->
-			    <a class="content-box" href="pages/inh_info.php?house_rent_id=25&amp;from=houseSeek">
-			        <!--求租者图片 float-->
-			        <!--
-			        <div class="pic-wrapper float-left">
-			            <img class="headimg" alt="XXX">
-			        </div>
-			        -->
-			        <!--求租者图片 float-->
-			        <div class="pic-wrapper-float" style="background-image: url(&quot;images/head_img/BriceGwo.jpg&quot;);"></div>
-			        <!--求租标题 float-->
-			        <div class="content-wrapper float-left">
-			            <h4><div class="title">无人自动驾驶L2-L3–L4-L5技术交流</div></h4>
-			            <!--房间属性简介 block 垂直排列-->
-						<!--<div class="content"></div>-->
-			            <div class="state">
-			                <ul class="state-info">
-			                    <!--关注人数-->
-								<li>
-			                        <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
-									<!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
-			                        <span class="house_seek_id">W25</span></li>
-								<!--
-			                    <li class="text-center">
-			                        <i class="fa fa-heart" aria-hidden="true"></i>
-			                        <span><div class="follow"></div></span>
-			                    </li>
-								-->
-			                    <li class="text-right"><span class="passtime">4个月前</span></li>
-			                    <!--
-			                    <li>
-			                        <span class="house_seek_id">
-			                    </li>
-			                    -->
-			                </ul>
-			            </div>
-			        </div>
-			    </a>
-			    <hr>
-			  </div>
-		<div class="more_loader_spinner" style="display: none;"></div></div>
+        <div style="display: none;">
+            <div class="single_item"><!--onclick="alert(this.innerHTML);"-->
+                <a class="content-box" href="pages/inh_info.php?house_rent_id=25&amp;from=houseSeek">
+                    <!--求租者图片 float-->
+                    <!--
+                    <div class="pic-wrapper float-left">
+                        <img class="headimg" alt="XXX">
+                    </div>
+                    -->
+                    <!--求租者图片 float-->
+                    <div class="pic-wrapper-float"
+                         style="background-image: url(&quot;images/head_img/BriceGwo.jpg&quot;);"></div>
+                    <!--求租标题 float-->
+                    <div class="content-wrapper float-left">
+                        <h4>
+                            <div class="title">无人自动驾驶L2-L3–L4-L5技术交流</div>
+                        </h4>
+                        <!--房间属性简介 block 垂直排列-->
+                        <!--<div class="content"></div>-->
+                        <div class="state">
+                            <ul class="state-info">
+                                <!--关注人数-->
+                                <li>
+                                    <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
+                                    <!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
+                                    <span class="house_seek_id">W25</span></li>
+                                <!--
+                                <li class="text-center">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <span><div class="follow"></div></span>
+                                </li>
+                                -->
+                                <li class="text-right"><span class="passtime">4个月前</span></li>
+                                <!--
+                                <li>
+                                    <span class="house_seek_id">
+                                </li>
+                                -->
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+            </div>
+        </div>
+        <div class="single_item" id="more_element_1"><!--onclick="alert(this.innerHTML);"-->
+            <a class="content-box" href="pages/inh_info.php?house_rent_id=5&amp;from=houseSeek">
+                <!--求租者图片 float-->
+                <!--
+                <div class="pic-wrapper float-left">
+                    <img class="headimg" alt="XXX">
+                </div>
+                -->
+                <!--求租者图片 float-->
+                <div class="pic-wrapper-float"
+                     style="background-image: url(&quot;images/head_img/jamesch086.jpg&quot;);"></div>
+                <!--求租标题 float-->
+                <div class="content-wrapper float-left">
+                    <h4>
+                        <div class="title">JD优惠券儿信息交流群</div>
+                    </h4>
+                    <!--房间属性简介 block 垂直排列-->
+                    <!--<div class="content"></div>-->
+                    <div class="state">
+                        <ul class="state-info">
+                            <!--关注人数-->
+                            <li>
+                                <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
+                                <!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
+                                <span class="house_seek_id">W5</span></li>
+                            <!--
+                            <li class="text-center">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span><div class="follow"></div></span>
+                            </li>
+                            -->
+                            <li class="text-right"><span class="passtime">1天前</span></li>
+                            <!--
+                            <li>
+                                <span class="house_seek_id">
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <hr>
+        </div>
+        <div class="single_item" id="more_element_2"><!--onclick="alert(this.innerHTML);"-->
+            <a class="content-box" href="pages/inh_info.php?house_rent_id=8&amp;from=houseSeek">
+                <!--求租者图片 float-->
+                <!--
+                <div class="pic-wrapper float-left">
+                    <img class="headimg" alt="XXX">
+                </div>
+                -->
+                <!--求租者图片 float-->
+                <div class="pic-wrapper-float"
+                     style="background-image: url(&quot;images/head_img/3169381.jpg&quot;);"></div>
+                <!--求租标题 float-->
+                <div class="content-wrapper float-left">
+                    <h4>
+                        <div class="title">占卜玄学研究交流群</div>
+                    </h4>
+                    <!--房间属性简介 block 垂直排列-->
+                    <!--<div class="content"></div>-->
+                    <div class="state">
+                        <ul class="state-info">
+                            <!--关注人数-->
+                            <li>
+                                <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
+                                <!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
+                                <span class="house_seek_id">W8</span></li>
+                            <!--
+                            <li class="text-center">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span><div class="follow"></div></span>
+                            </li>
+                            -->
+                            <li class="text-right"><span class="passtime">1天前</span></li>
+                            <!--
+                            <li>
+                                <span class="house_seek_id">
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <hr>
+        </div>
+        <div class="single_item" id="more_element_3"><!--onclick="alert(this.innerHTML);"-->
+            <a class="content-box" href="pages/inh_info.php?house_rent_id=13&amp;from=houseSeek">
+                <!--求租者图片 float-->
+                <!--
+                <div class="pic-wrapper float-left">
+                    <img class="headimg" alt="XXX">
+                </div>
+                -->
+                <!--求租者图片 float-->
+                <div class="pic-wrapper-float"
+                     style="background-image: url(&quot;images/head_img/729315717.jpg&quot;);"></div>
+                <!--求租标题 float-->
+                <div class="content-wrapper float-left">
+                    <h4>
+                        <div class="title">一个和谐友爱的王者荣耀群</div>
+                    </h4>
+                    <!--房间属性简介 block 垂直排列-->
+                    <!--<div class="content"></div>-->
+                    <div class="state">
+                        <ul class="state-info">
+                            <!--关注人数-->
+                            <li>
+                                <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
+                                <!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
+                                <span class="house_seek_id">W13</span></li>
+                            <!--
+                            <li class="text-center">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span><div class="follow"></div></span>
+                            </li>
+                            -->
+                            <li class="text-right"><span class="passtime">1天前</span></li>
+                            <!--
+                            <li>
+                                <span class="house_seek_id">
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <hr>
+        </div>
+        <div class="single_item" id="more_element_4"><!--onclick="alert(this.innerHTML);"-->
+            <a class="content-box" href="pages/inh_info.php?house_rent_id=14&amp;from=houseSeek">
+                <!--求租者图片 float-->
+                <!--
+                <div class="pic-wrapper float-left">
+                    <img class="headimg" alt="XXX">
+                </div>
+                -->
+                <!--求租者图片 float-->
+                <div class="pic-wrapper-float"
+                     style="background-image: url(&quot;images/head_img/aaronyeah123.jpg&quot;);"></div>
+                <!--求租标题 float-->
+                <div class="content-wrapper float-left">
+                    <h4>
+                        <div class="title">火金财经官方社群</div>
+                    </h4>
+                    <!--房间属性简介 block 垂直排列-->
+                    <!--<div class="content"></div>-->
+                    <div class="state">
+                        <ul class="state-info">
+                            <!--关注人数-->
+                            <li>
+                                <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
+                                <!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
+                                <span class="house_seek_id">W14</span></li>
+                            <!--
+                            <li class="text-center">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span><div class="follow"></div></span>
+                            </li>
+                            -->
+                            <li class="text-right"><span class="passtime">4个月前</span></li>
+                            <!--
+                            <li>
+                                <span class="house_seek_id">
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <hr>
+        </div>
+        <div class="single_item" id="more_element_5"><!--onclick="alert(this.innerHTML);"-->
+            <a class="content-box" href="pages/inh_info.php?house_rent_id=17&amp;from=houseSeek">
+                <!--求租者图片 float-->
+                <!--
+                <div class="pic-wrapper float-left">
+                    <img class="headimg" alt="XXX">
+                </div>
+                -->
+                <!--求租者图片 float-->
+                <div class="pic-wrapper-float"
+                     style="background-image: url(&quot;images/head_img/LZ-Aurora.jpg&quot;);"></div>
+                <!--求租标题 float-->
+                <div class="content-wrapper float-left">
+                    <h4>
+                        <div class="title">区块链媒体群</div>
+                    </h4>
+                    <!--房间属性简介 block 垂直排列-->
+                    <!--<div class="content"></div>-->
+                    <div class="state">
+                        <ul class="state-info">
+                            <!--关注人数-->
+                            <li>
+                                <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
+                                <!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
+                                <span class="house_seek_id">W17</span></li>
+                            <!--
+                            <li class="text-center">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span><div class="follow"></div></span>
+                            </li>
+                            -->
+                            <li class="text-right"><span class="passtime">4个月前</span></li>
+                            <!--
+                            <li>
+                                <span class="house_seek_id">
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <hr>
+        </div>
+        <div class="single_item" id="more_element_6"><!--onclick="alert(this.innerHTML);"-->
+            <a class="content-box" href="pages/inh_info.php?house_rent_id=18&amp;from=houseSeek">
+                <!--求租者图片 float-->
+                <!--
+                <div class="pic-wrapper float-left">
+                    <img class="headimg" alt="XXX">
+                </div>
+                -->
+                <!--求租者图片 float-->
+                <div class="pic-wrapper-float"
+                     style="background-image: url(&quot;images/head_img/BriceGwo.jpg&quot;);"></div>
+                <!--求租标题 float-->
+                <div class="content-wrapper float-left">
+                    <h4>
+                        <div class="title">房产投资交流群(北京)</div>
+                    </h4>
+                    <!--房间属性简介 block 垂直排列-->
+                    <!--<div class="content"></div>-->
+                    <div class="state">
+                        <ul class="state-info">
+                            <!--关注人数-->
+                            <li>
+                                <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
+                                <!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
+                                <span class="house_seek_id">W18</span></li>
+                            <!--
+                            <li class="text-center">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span><div class="follow"></div></span>
+                            </li>
+                            -->
+                            <li class="text-right"><span class="passtime">4个月前</span></li>
+                            <!--
+                            <li>
+                                <span class="house_seek_id">
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <hr>
+        </div>
+        <div class="single_item" id="more_element_7"><!--onclick="alert(this.innerHTML);"-->
+            <a class="content-box" href="pages/inh_info.php?house_rent_id=25&amp;from=houseSeek">
+                <!--求租者图片 float-->
+                <!--
+                <div class="pic-wrapper float-left">
+                    <img class="headimg" alt="XXX">
+                </div>
+                -->
+                <!--求租者图片 float-->
+                <div class="pic-wrapper-float"
+                     style="background-image: url(&quot;images/head_img/BriceGwo.jpg&quot;);"></div>
+                <!--求租标题 float-->
+                <div class="content-wrapper float-left">
+                    <h4>
+                        <div class="title">无人自动驾驶L2-L3–L4-L5技术交流</div>
+                    </h4>
+                    <!--房间属性简介 block 垂直排列-->
+                    <!--<div class="content"></div>-->
+                    <div class="state">
+                        <ul class="state-info">
+                            <!--关注人数-->
+                            <li>
+                                <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
+                                <!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
+                                <span class="house_seek_id">W25</span></li>
+                            <!--
+                            <li class="text-center">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span><div class="follow"></div></span>
+                            </li>
+                            -->
+                            <li class="text-right"><span class="passtime">4个月前</span></li>
+                            <!--
+                            <li>
+                                <span class="house_seek_id">
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <hr>
+        </div>
+        <a href="javascript:;" class="get_more">——·——加载更多——·——</a>
+        <div class="more_loader_spinner" style="display: none;"></div>
+    </div>
 
 </div>
 
@@ -393,7 +428,7 @@
     <div class="nav-btn fo-nav">
         <a href="#" class="active">
             <!--<i class="fa fa-handshake-o fa-2x  " aria-hidden="true"></i>-->
-			<i class="fa fa-user-circle fa-2x  " aria-hidden="true"></i>
+            <i class="fa fa-user-circle fa-2x  " aria-hidden="true"></i>
             <div class="label">待验证</div>
         </a>
     </div>
@@ -414,4 +449,5 @@
 
 </footer>
 
-</body></html>
+</body>
+</html>
