@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>区块链帮助-发布群组</title>
+    <title>区块链帮助-发布找群</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/search.main.css" rel="stylesheet">
     <script type="text/javascript" src="../js/jquery.min.js"></script>
@@ -62,15 +62,15 @@
     <!--搜索链接跳转-->
     <div class="nav-btn nav-return">
         <!--返回需要跳转的页面暂时没写-->
-        <a href='../index.php'>
+        <a href='../inh.php'>
             <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
             <!--<div class="return">返回</div>-->
         </a>
 
     </div>
-    <h2>发布群组</h2>
+    <h2>发布找群</h2>
     <div class="nav-btn nav-change">
-        <a href="publish_seek.html" >发布找群</a>
+        <a href="publish.html" >发布群组</a>
     </div>
 </header>
 <div class="body rent_bgcolor">
@@ -78,20 +78,63 @@
         <form name="form" id="form" action="../php/publish.php" method="post" onsubmit="return Check_Publish();">
             <fieldset class="form-middle">
                 <div class="line-box">
-                    <label for="district">群名称</label>
-                    <input style="margin-left:60px;" type="text" class="associate" name="name" id="name" maxlength="20">
+                    想找
+						<select name="district" id="district" style=" width:25%">
+                    <option selected="">不限地区</option>
+                        <option>北京</option>
+						<option>环京</option>
+                        <option>天津</option>
+					
+                        <option>上海</option>
+                        <option>重庆</option>
+                        <option>河北</option>
+                        <option>山西</option>
+                        <option>辽宁</option>
+                        <option>吉林</option>
+                        <option>黑龙江</option>
+                        <option>江苏</option>
+                        <option>浙江</option>
+                        <option>安徽</option>
+                        <option>福建</option>
+                        <option>江西</option>
+                        <option>山东</option>
+                        <option>河南</option>
+                        <option>湖北</option>
+                        <option>湖南</option>
+						<option>广东</option>
+						<option>海南</option>
+						<option>四川</option>
+						<option>贵州</option>
+						<option>云南</option>
+						<option>陕西</option>
+						<option>甘肃</option>
+						<option>青海</option>
+						<option>内蒙古</option>
+						<option>西藏</option>
+						<option>广西</option>
+						<option>宁夏</option>
+						<option>新疆</option>
+						<option>香港</option>
+						<option>澳门</option>
+						<option>台湾</option> 
+						
+                        <!--添加候选项-->
+                    </select>
+					的群
+                    <input style="margin-left:60px;" type="text" class="associate" name="name" id="name" value="群描述，比如：海淀租房群" maxlength="30">
                 </div>
             </fieldset>
+	    </fieldset>
             <fieldset class="form-middle">
                 <div class="line-box">
-                    <label for="district">群主微信</label>
+                    <label for="district">您的微信</label>
                     <input style="margin-left:60px;" type="text" class="associate" name="wechat" id="wechat"
                            maxlength="30">
                 </div>
             </fieldset>
             <fieldset class="form-middle">
                 <div class="line-box">
-                    <label class="big" for="about">群简介</label>
+                    <label class="big" for="about">您的需求</label>
                     <!--<textarea name="about" id="about" cols="30" rows="10" placeholder="亲，房源信息描述完整清晰更好租哦！"></textarea>-->
                     还可以输入<span id="counter">56</span>字<br/><!--字数统计结束&nbsp;&nbsp;-->
                     <textarea style="overflow-y:hidden;overflow-x:hidden" class="wenben" cols="20" rows="5" name="about"
